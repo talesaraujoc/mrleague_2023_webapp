@@ -7,7 +7,7 @@ import plotly.express as px
 
 from globals import *
 from app import *
-from components import sidebar, pag_1, pag_2
+from components import sidebar, paginaum, paginadois
 
 
 
@@ -30,11 +30,11 @@ app.layout = dbc.Container(children=[
 
 @app.callback(Output("page-content", "children"), [Input("url", "pathname")])
 def render_page_content(pathname):
-    if pathname == "/" or pathname == "/pag_1": 
-        return pag_1.layout
+    if pathname == "/" or pathname == "/paginaum": 
+        return paginaum.layout
 
-    if pathname == "/pag_2":
-        return pag_2.layout
+    if pathname == "/paginadois":
+        return paginadois.layout
         
 
 if __name__ == '__main__':

@@ -33,9 +33,9 @@ card = dbc.Card(
 style={'height':'100vh'})
 
 # Layout
-app.layout = html.Div([
+layout = html.Div([
     dbc.Row([
-        dbc.Col([],sm=1),
+        #dbc.Col([],sm=1),
         
         dbc.Col(card,sm=2),
         
